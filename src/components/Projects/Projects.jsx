@@ -43,7 +43,7 @@ const Projects = () => {
       <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {ProjectsData.map((project) => {
           return (
-            <div className="bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl hover:scale-110 duration-300 group space-y-5">
+            <div key={project.id} className="bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl hover:scale-110 duration-300 group space-y-5">
               <Image src={project.img} alt={Projects.title} className="w-full" />
               <div className="space-y-2 p-4">
                 <h1>{project.title}</h1>

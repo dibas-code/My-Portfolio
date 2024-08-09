@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         <div className="flex flex-col justify-center md:text-left py-14 md:Py-0">
           <div className="text-center md:text-left space-y-6">
-            <motion.p variants={slideUp(0.3)} animate="animate" initial="initial" className="text-4xl">Hello, I'm</motion.p>
+            <motion.p variants={slideUp(0.3)} animate="animate" initial="initial" className="text-4xl">Hello, I&apos;m</motion.p>
             <motion.p variants={slideUp(0.5)} animate="animate" initial="initial" className="text-5xl lg:text-7xl font-satisfy text-outline">Dibas Neupane</motion.p>
             <motion.p variants={slideUp(0.7)} animate="animate" initial="initial" className="text-sm leading-snug">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sit repellendus magni impedit porro error beatae expedita sequi suscipit deserunt numquam dolorem iusto tempora exercitationem voluptates libero, sapiente voluptate. Distinctio.</motion.p>
             <motion.button variants={slideUp(0.9)} animate="animate" initial="initial" className="btn">Know More</motion.button>
