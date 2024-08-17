@@ -60,7 +60,7 @@ const Hero = () => {
                 Know More
               </motion.button>
               {/* status section */}
-              <motion.div
+              {/* <motion.div
                 variants={slideUp(1.1)}
                 animate="animate"
                 initial="initial"
@@ -102,7 +102,7 @@ const Hero = () => {
                   </p>
                   <p className="text-sm">Experience</p>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
           {/* image section */}

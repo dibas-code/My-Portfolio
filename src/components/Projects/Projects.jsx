@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import project1 from "../../assets/projects/p1.jpeg";
+import project1 from "../../assets/projects/p4.jpeg";
 import project2 from "../../assets/projects/p2.jpg";
 import project3 from "../../assets/projects/p3.jpg";
 import Image from "next/image";
@@ -10,7 +10,7 @@ const ProjectsData = [
   {
     id: 1,
     title: "Project1",
-    link: "#",
+    link: "https://lalitpurshop.netlify.app/",
     desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
     img: project1,
     delay: 0.4,
@@ -51,7 +51,7 @@ const Projects = () => {
               </div>
               {/* hidden button */}
               <div className="hidden group-hover:flex justify-around items-center duration-300">
-                <button className="border-2 border-white px-4 py-2 rounded-lg">View Project</button>
+                <button className="border-2 border-white px-4 py-2 rounded-lg"><a href={project.link}>View Project</a></button>
                 <button className="btn">View code</button>
               </div>
             </div>
