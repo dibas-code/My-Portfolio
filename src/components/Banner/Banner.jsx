@@ -13,7 +13,7 @@ const bgGrains = {
 }
 const Banner = () => {
   return <div>
-    <section className="bg-black text-white pb-20">
+    <section className="bg-black text-white pb-20 mb-20">
       <div className="container">
         <div style={bgGrains} className="bg-gray-950 rounded-3xl py-14 px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 translate-y-36">
           {/*banner image*/}
