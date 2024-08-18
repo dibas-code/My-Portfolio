@@ -55,7 +55,7 @@ const Projects = () => {
               {/* hidden button */}
               <div className="hidden group-hover:flex justify-around items-center duration-300">
                 <button className="border-2 border-white px-4 py-2 rounded-lg"><a href={project.link}>View Project</a></button>
-                <button className="btn"><a href={project.link2}></a>View code</button>
+                <button className="btn"><a href={project.link2}>View code</a></button>
               </div>
             </div>
           )
