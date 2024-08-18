@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import project1 from "../../assets/projects/p4.jpeg";
+import project1 from "../../assets/projects/p1.jpeg";
 import project2 from "../../assets/projects/p2.jpg";
 import project3 from "../../assets/projects/p3.jpg";
 import Image from "next/image";
@@ -10,26 +10,29 @@ const ProjectsData = [
   {
     id: 1,
     title: "Project1",
-    link: "https://lalitpurshop.netlify.app/",
+    link: "https://tourandtravel-dibascode.vercel.app/",
     desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
     img: project1,
     delay: 0.4,
+    link2: "https://github.com/dibas-code/Travel-App"
   },
   {
     id: 2,
     title: "Project2",
-    link: "#",
+    link: "https://lalitpurshop-dibasneupane.vercel.app/",
     desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
     img: project2,
     delay: 0.4,
+    link2: "https://github.com/dibas-code/Ecommerce-UI"
   },
   {
     id: 3,
     title: "Project3",
-    link: "#",
+    link: "https://passwordmanager-dibasneupane.vercel.app/",
     desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
     img: project3,
     delay: 0.4,
+    link2: "https://github.com/dibas-code/Advanced-Todo"
   }
 ]
 const Projects = () => {
@@ -52,7 +55,7 @@ const Projects = () => {
               {/* hidden button */}
               <div className="hidden group-hover:flex justify-around items-center duration-300">
                 <button className="border-2 border-white px-4 py-2 rounded-lg"><a href={project.link}>View Project</a></button>
-                <button className="btn">View code</button>
+                <button className="btn"><a href={project.link2}></a>View code</button>
               </div>
             </div>
           )
