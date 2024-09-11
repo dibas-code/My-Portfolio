@@ -11,7 +11,7 @@ const ProjectsData = [
     id: 1,
     title: "Project1",
     link: "https://tourandtravel-dibascode.vercel.app/",
-    desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
+    desc: "Tour and Travel website showcasing popular destinations for long trips, with blogs, ratings. Scroll animations are added for better user experience.Blogs on Popular Tourist places and countries",
     img: project1,
     delay: 0.4,
     link2: "https://github.com/dibas-code/Travel-App"
@@ -20,18 +20,18 @@ const ProjectsData = [
     id: 2,
     title: "Project2",
     link: "https://lalitpurshop-dibasneupane.vercel.app/",
-    desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
+    desc: "Ecommerce site fully responsive and Animated UI using React js and Tailwind CSS. React Silk is used as Banner images Slider. React Aos for slide animations.",
     img: project2,
-    delay: 0.4,
+    delay: 0.6,
     link2: "https://github.com/dibas-code/Ecommerce-UI"
   },
   {
     id: 3,
     title: "Project3",
     link: "https://passwordmanager-dibasneupane.vercel.app/",
-    desc: "Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows",
+    desc: "A responsive password handler app, similar to a to-do app, with input fields for site, username, and password. Users can save, edit, and delete entries, managing their login data for websites.",
     img: project3,
-    delay: 0.4,
+    delay: 0.8,
     link2: "https://github.com/dibas-code/Advanced-Todo"
   }
 ]
@@ -54,8 +54,8 @@ const Projects = () => {
               </div>
               {/* hidden button */}
               <div className="hidden group-hover:flex justify-around items-center duration-300">
-                <button className="border-2 border-white px-4 py-2 rounded-lg"><a href={project.link}>View Project</a></button>
-                <button className="btn"><a href={project.link2}>View code</a></button>
+                <button className="border-2 border-white px-4 py-2 rounded-lg"><a className="px-4 py-2" href={project.link}>View Project</a></button>
+                <button className="btn"><a className="py-2 px-4" href={project.link2}>View code</a></button>
               </div>
             </div>
           )

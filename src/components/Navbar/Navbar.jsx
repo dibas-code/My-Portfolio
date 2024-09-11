@@ -60,7 +60,7 @@ const Navbar = () => {
             )
           })}
           <button className="btn text-white">
-            <a href="./resume.pdf">
+            <a href="./Resume.pdf">
               Get Resume</a>
           </button>
         </ul>
