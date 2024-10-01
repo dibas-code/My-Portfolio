@@ -43,10 +43,10 @@ const Projects = () => {
         <p className="text-5xl lg:text-8xl text-white/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 uppercase font-extrabold">Projects</p>
       </motion.div>
       {/* project cards */}
-      <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <motion.div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {ProjectsData.map((project) => {
           return (
-            <div key={project.id} className="bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl hover:scale-110 duration-300 group space-y-5">
+            <div key={project.id} className="bg-black hover:red-shadow border-2 border-primary/80 p-4 rounded-xl hover:scale-110 duration-300 group space-y-5 m-auto">
               <Image src={project.img} alt={Projects.title} className="w-full" />
               <div className="space-y-2 p-4">
                 <h1>{project.title}</h1>
@@ -54,8 +54,8 @@ const Projects = () => {
               </div>
               {/* hidden button */}
               <div className="hidden group-hover:flex justify-around items-center duration-300">
-                <button className="border-2 border-white px-4 py-2 rounded-lg"><a className="px-4 py-2" href={project.link}>View Project</a></button>
-                <button className="btn"><a className="py-2 px-4" href={project.link2}>View code</a></button>
+                <button className="border-2 border-white rounded-lg flex justify-center text-center p-2 lg:px-3 lg:py-3"><a className="" href={project.link}>View Project</a></button>
+                <button className="btn"><a className="" href={project.link2}>View code</a></button>
               </div>
             </div>
           )
